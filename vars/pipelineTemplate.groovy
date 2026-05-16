@@ -37,8 +37,8 @@ def call(Map config) {
 
             stage('Verify Jar') {
                 steps {
-                    sh 'test -f target/app.jar && echo "JAR exists"'
-                    sh 'ls -lh target/app.jar'
+                    sh 'test -f target/*.jar && echo "JAR exists"'
+                    sh 'ls -lh target/*.jar'
                 }
             }
 
