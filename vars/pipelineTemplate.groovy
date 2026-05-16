@@ -2,7 +2,10 @@ def call(Map config) {
 
     pipeline {
         agent any
-
+        tools {
+            jdk 'jdk-17'
+            maven 'maven'
+        }
         environment {
             IMAGE_NAME     = "${config.imageName}"
             IMAGE_TAG      = "${config.imageTag}"
