@@ -1,0 +1,5 @@
+service-1 running on port 9090
+
+service-2 running on port 9091
+
+service-3 running on port 9092
