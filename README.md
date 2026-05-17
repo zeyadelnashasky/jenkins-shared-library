@@ -1,5 +1,5 @@
 # CI/CD Pipeline with Jenkins Shared Library
--------------------------------------------
+---------------------------------------------
 
 This project implements a CI/CD pipeline using Jenkins, organized through a shared library approach. The key components are:
 A central Shared Library Repo that contains the pipeline logic, built-in stages, and common steps.
@@ -7,7 +7,7 @@ Three individual Service Repos: Each of these repositories connects to the share
 
 
 # Structure
----------
+------------
 
 1- Shared Library Repo:
 
@@ -24,7 +24,7 @@ Within each Jenkinsfile, environment variables are used to customize the behavio
 
 
 # Jenkins Setup
---------------
+----------------
 
 1- I created three separate Jenkins jobs on the Jenkins server—one for each service.
 
@@ -44,7 +44,7 @@ Within each Jenkinsfile, environment variables are used to customize the behavio
 
 
 # GitHub Repositories
----------------------
+----------------------
 
 Shared Library Repo: https://github.com/zeyadelnashasky/jenkins-shared-library
 
@@ -66,7 +66,8 @@ zeyadelnashashky/service-3 --> docker pull zeyadelnashashky/service-3:latest
 
 
 # Tech Stack
-----------
+-------------
+
 1- Jenkins (CI/CD)
 
 2- Docker
@@ -82,7 +83,7 @@ zeyadelnashashky/service-3 --> docker pull zeyadelnashashky/service-3:latest
 also you could observe the cluster (cpu, ram, storage, pods, nodes, etc) by using lens software, which you can connect your cluster to it to visualize your kubernetes cluster by inserting your kubeconfig file in it to connect your cluster effectively. 
 
 # Getting Started
-----------------
+------------------
 
 1- Clone each of the service repos.
 
@@ -99,3 +100,10 @@ also you could observe the cluster (cpu, ram, storage, pods, nodes, etc) by usin
 7- The image is then pulled and run as a container on the target Jenkins server, with services running on ports 9090, 9091, and 9092 respectively.
 
 8- To run your application, open your browser on jenkins server and write this url: [http://YOUR_JENKINS_IP_SERVER:PORT_NUMBER] to visualize your application.
+
+
+# Architecture Diagram
+-----------------------
+
+<img width="1408" height="768" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/e2725ab6-f06b-4202-8d70-7007dac65420" />
+
